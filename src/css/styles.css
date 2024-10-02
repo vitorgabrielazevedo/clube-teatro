@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap'); /* Fonte Meow Script */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding-bottom: 1000px;
+    background-color: #fdfdfd;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    color: #350d3d;
+    text-align: center;
+    font-size: 45px;
+    padding: 24px 0px;
+}
+
+/* navbar */
+
+#navbar {
+    background-color: #350d3d;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* alterar depois */
+    /* background-color: aliceblue; */
+}
+
+#top-bar {
+    padding-top: 20px;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+
+#logo {
+    padding: 16px 0px;
+    text-align: center;
+    /* text-align: center;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%; */
+}
+
+#logo > h2 {
+    font-family: 'Meow Script', cursive, sans-serif; /* Procurar outra fonte */
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#logo > p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#contact-btn {
+    background-color: #fdfdfd;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    transition: 0.3s;
+}
+
+#contact-btn:hover {
+    background-color: #eee;
+}
+
+#bottom-bar {
+    background-color: #fdfdfd;
+    padding: 20px 0px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links > li {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 2px solid #000;
+}
+
+#nav-links > li:last-child {
+    border-right: none;
+}
+
+#nav-links > li > a {
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#nav-links > li > a:hover {
+    opacity: 0.9;
+}
+
+/* seção de imagens */
+
+#banner-container, #phrase-container {
+    width: 100%;
+}
+
+#banner-container img, #phrase-container img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner-container {
+    height: 500px;
+}
+
+/* Corrigir o posicionamento da foto */
+#phrase-container {
+    height: 200px;
+}
+
+/* inscrições */
+
+#signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 70px;
+}
+
+#signup > div {
+    width: 50%;
+}
+
+#signup > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    /* display: flex;
+    justify-content: center; */
+}
+
+#signup > div:nth-child(1) > p {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top: -35px;
+    left: 22%;
+    color: #350d3d;
+    font-weight: bold;
+    /* margin-left: 20px;
+    position: absolute;
+    left: 10%;
+    z-index: 1; */
+}
+
+#signup > div:nth-child(1) > img {
+    /* width: 50%; */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+#signup-btn {
+    background-color: #350d3d;
+    padding: 10px 20px;
+    width: 300px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 14%;
+    z-index: 1;
+    /* z-index: 0; */
+}
+
+#signup-btn:hover {
+    transform: scale(1.1);
+}
+
+#signup > div:nth-child(2) > .peca {
+    max-width: 90%;
+    height: 180px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: -1;
+    /* margin: 10px 0 10px 200px; */
+}
+
+#signup > div:nth-child(2) > .ticket {
+    position: absolute;
+    right: -40px;
+    bottom: -50px;
+    z-index: 0;
+    width: 200px;
+    height: auto;
+}
